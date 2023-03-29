@@ -1,24 +1,24 @@
 body {
     text-align: center;
-    font-family: Helvetica, sans-serif;
+    font-family: Ink Free, sans-serif;
   }
-  
+
   h1 {
     font-size: 42px;
   }
-  
-  
+
+
   #buttons-container {
     margin-bottom: 20px;
   }
-  
+
   #buttons-container button {
     border: none;
     padding: 10px 15px;
     margin: 0 10px;
   }
-  
-  
+
+
   #container {
     width: 300px;
     margin: 0;
@@ -29,51 +29,51 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
-  
+
   .box {
     height: 100px;
-    border: 5px solid #000;
+    border: 5px solid rgb(41, 182, 41);
     box-sizing: border-box;
     flex: 1 1 33%;
   }
-  
+
   #block-1, #block-2, #block-3 {
     border-top: none;
   }
-  
+
   #block-1, #block-4, #block-7 {
     border-left: none;
   }
-  
+
   #block-3, #block-6, #block-9 {
     border-right: none;
   }
-  
+
   #block-7, #block-8, #block-9 {
     border-bottom: none;
   }
-  
-  
+
+
   .x {
     font-size: 65px;
-    color: red;
+    color: rgb(255, 0, 200);
     display: inline-block;
     line-height: 100px;
   }
-  
+
   .o {
     width: 50px;
     height: 50px;
-    border: 5px solid green;
+    border: 5px solid rgb(13, 84, 216);
     border-radius: 50%;
     display: inline-block;
     margin-top: 17px;
   }
-  
+
   .hide {
     display: none !important;
   }
-  
+
   #scoreboard-container {
     font-weight: bold;
     margin-top: 30px;
@@ -82,26 +82,27 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
-  
+
   .score-box {
     display: inline-block;
     margin: 0px 20px;
   }
-  
+
   #x-scoreboard {
-    color: red;
+    color: rgb(255, 0, 200);
     margin-right: 3px;
   }
-  
+
   #o-scoreboard {
     display: inline-block;
     width: 18px;
     height: 18px;
-    border: 2px solid green;
+    border: 2px solid rgb(13, 84, 216);
     border-radius: 50%;
     margin-right: 3px;
   }
-  
+
+
   #message p {
     position: absolute;
     margin-left: auto;
@@ -111,7 +112,8 @@ body {
     top: 150px;
     width: 500px;
     font-size: 50px;
-    background-color: #000;
-    color: #FFF;
+    background-color: black;
+    color: white;
     padding: 20px;
   }
+  
