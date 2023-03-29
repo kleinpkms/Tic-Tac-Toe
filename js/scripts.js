@@ -179,6 +179,7 @@ function checkWinCondition() {
   }
 
 
+
   let counter = 0;
 
   for(let i = 0; i < boxes.length; i++) {
@@ -190,7 +191,7 @@ function checkWinCondition() {
   }
 
   if(counter == 9) {
-    declareWinner('deu velha');
+    declareWinner('Draw');
   }
 
 }
@@ -203,23 +204,27 @@ function declareWinner(winner) {
 
   if(winner == 'x') {
     scoreboardX.textContent = parseInt(scoreboardX.textContent) + 1;
-    msg = "O Jogador 1 venceu";
+    msg = "Player 1 won";
   } else if(winner == 'o') {
     scoreboardY.textContent = parseInt(scoreboardY.textContent) + 1;
-    msg = "O Jogador 2 venceu";
+    msg = "Player 2 won";
   } else {
-    msg = "Deu velha!";
+    msg = "Draw!";
   }
+
 
   messageText.innerHTML = msg;
   messageContainer.classList.remove("hide");
 
+  
   setTimeout(function() {
     messageContainer.classList.add("hide");
   }, 3000);
 
+
   player1 = 0;
   player2 = 0;
+
 
   let boxesToRemove = document.querySelectorAll(".box div");
 
@@ -259,12 +264,14 @@ function computerPlay() {
 
     let randomNumber = Math.floor(Math.random() * 5);
 
+ 
     if(boxes[i].childNodes[0] == undefined) {  
       if(randomNumber <= 1) {
         boxes[i].appendChild(cloneO);
         counter++;
         break;
       }
+        
     } else {
       filled++;
     }
